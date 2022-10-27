@@ -1,5 +1,5 @@
-// import Layout from "../../src/compenents/layouts/layout";
-// import Content from "./content";
+import Layout from "../../src/compenents/layouts/layout";
+import Content from "./content";
 
 // const HomePage = () => {
 //   return (
@@ -10,11 +10,6 @@
 // };
 
 // export default HomePage;
-
-import Head from "next/head";
-
-import Layout from "../../src/components/layouts/layout";
-import Content from "./content";
 
 const HomePage = () => {
   return (
