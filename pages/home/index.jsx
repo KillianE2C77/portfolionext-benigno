@@ -11,6 +11,8 @@ import Content from "./content";
 
 // export default HomePage;
 
+import Head from "next/head";
+
 const HomePage = () => {
   return (
     <>
