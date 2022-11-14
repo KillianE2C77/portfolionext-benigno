@@ -1,8 +1,8 @@
 let styles = {
   bgblacksmooth: "bg-black w-screen h-52",
   bordergold: "border border-yellow-500",
-  footerflex: "flex flex-cols justify-center",
-  footergrid: "grid grid-rows-3",
+  footerflex: "flex flex-col justify-center",
+  footergrid: "grid grid-rows-1",
   footertext: "uppercase text-white text-center",
 };
 

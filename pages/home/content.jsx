@@ -3,6 +3,15 @@ import logo from "@src/assets/img/mazebank.png";
 import metacode from "@src/assets/img/metacode.png";
 
 let styles = {
+  prestitle: "uppercase text-yellow-500 text-center",
+  prestext: "text-white text-center pb-8",
+  prestext2: "text-white text-center",
+  presgrid: "grid grid-cols-1",
+  presflex: "flex h-96 flex-row justify-center",
+  preshr: "border-dashed border-2 border-black",
+  colorpres:
+    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1",
+
   title: "uppercase text-yellow-500 text-center",
   apropostext: "text-white text-center pb-8",
   apropostext2: "text-white text-center",
@@ -49,16 +58,16 @@ let styles = {
   projectgridcols3: "grid grid-rows-3",
   projectflex: "flex flex-col",
   projecthr: "border-dashed border-2 border-yellow-600",
-  colorproject: "w-screen h-screen bg-customBlack-blackdark",
+  colorproject: "w-screen h-1/3 bg-customBlack-blackdark",
   projectcolor:
     "flex justify-center inline-block border-b-2 border-indigo-500 m-2 text-white p-1 list-none text-lg",
   projectblock1:
     "w-96 h-50 bg-customRed-redpure shadow-lg shadow-red-500/50  outline outline-offset-2 outline-1",
   projectblock2:
-    "w-96 h-50 bg-green-800 shadow-lg shadow-green-500/50  outline outline-offset-2 outline-1",
+    "w-96 h-50 bg-green-800 shadow-lg shadow-green-500/50 outline outline-offset-2 outline-1 m-12",
   projectblock3:
     "w-96 h-50 bg-customRed-redpure shadow-lg shadow-red-500/50  outline outline-offset-2 outline-1",
-  projectblockflex: "flex justify-center",
+  projectblockflex: "flex flex-col justify-center items-center",
 
   projectpictureflex: "flex flex-row justify-center",
   projectpicturecolor:
@@ -71,6 +80,29 @@ let styles = {
 const Content = () => {
   return (
     <>
+      <div className={styles.presgrid}>
+        <div className={styles.presflex}>
+          <div className={styles.colorpres}>
+            <div className={styles.preshr}>
+              <h1 className={styles.prestitle}>A Propos!</h1>
+              <p className={styles.prestext}>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                illo aspernatur nam qui commodi vero error voluptate optio amet
+                minus iure esse molestias mollitia perferendis explicabo aut,
+                reiciendis nulla ipsam?
+              </p>
+
+              <p className={styles.prestext}>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                illo aspernatur nam qui commodi vero error voluptate optio amet
+                minus iure esse molestias mollitia perferendis explicabo aut,
+                reiciendis nulla ipsam?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.aproposgrid}>
         <div className={styles.aproposflex}>
           <div className={styles.colorapropos}>
