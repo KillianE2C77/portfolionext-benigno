@@ -1,26 +1,36 @@
 import Image from "next/image";
 import logo from "@src/assets/img/mazebank.png";
 import metacode from "@src/assets/img/metacode.png";
+import code from "@src/assets/img/code.jpg";
 
 let styles = {
-  prestitle: "uppercase text-yellow-500 text-center",
-  prestext: "text-white text-center pb-8",
-  prestext2: "text-white text-center",
+  //Titre
+  prestitle:
+    "uppercase text-yellow-500 text-center lg:text-red-500 lg:items-center",
+  prestext: "text-white text-center pb-8 lg:text-5xl lg:font-semibold",
+  prestext2: "text-white text-center lg:font-semibold",
   presgrid: "grid grid-cols-1",
-  presflex: "flex h-96 flex-row justify-center",
-  preshr: "border-dashed border-2 border-black",
+  presflex: "flex h-96 flex-row justify-center lg:h-full",
+  preshr:
+    "border-dashed border-2 border-black lg:border-dashed lg:border-2 lg:border-white",
   colorpres:
-    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1",
+    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1 lg:bg-beige lg:h-full",
+  imagepres:
+    "bg-customBlack-blacklightdark shadow-lg shadow-black-500/50 lg:bg-customBlack-blacklightdark lg:shadow-lg lg:shadow-black-500/50 lg:blur-sm lg:bg-fixed",
 
-  title: "uppercase text-yellow-500 text-center",
-  apropostext: "text-white text-center pb-8",
-  apropostext2: "text-white text-center",
-  aproposgrid: "grid grid-cols-1",
-  aproposflex: "flex flex-row justify-center",
-  aproposhr: "border-dashed border-2 border-black",
+  // A propos
+  title: "uppercase text-yellow-500 text-center lg:text-4xl lg:text-blue-500",
+  apropostext: "text-white text-center pb-8 lg:text-blue-500",
+  apropostext2: "text-white text-center lg:text-blue-500",
+  aproposgrid: "grid grid-cols-2",
+  aproposflex: "flex flex-row justify-center lg:items-center  lg:h-96",
+  aproposhr:
+    "border-dashed border-2 border-black lg:border-dashed lg:border-2 lg:border-white",
   colorapropos:
-    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1",
+    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1 lg:bg-beige lg:h-full",
+  aproposborder: "lg:border-b-4 lg:border-indigo-500 lg:h-",
 
+  // Skills
   titleskills: "uppercase text-yellow-500 text-center",
   skillstext: "text-white text-center pb-8",
   skillsext2: "text-white text-center",
@@ -30,6 +40,7 @@ let styles = {
   colorskills: "w-screen h-52 bg-customBlack-blackdark",
   skillscolor: "inline-block bg-slate-500 m-2 text-white p-1 list-none text-lg",
 
+  // EXPERIENCE
   titleexperience:
     "uppercase text-customBlack-whitepure font-semibold text-center",
   titleannee: "uppercase font-bold text-customBlack-blackpure text-center ",
@@ -50,6 +61,7 @@ let styles = {
     "w-80 h-50 bg-customGold-goldpure mt-14 outline outline-offset-2 outline-1",
   experienceblockflex: "flex justify-center",
 
+  // Projet
   titleproject: "uppercase text-white m-5 text-center text-lg font-black",
   projecttext: " text-customBlack-blackpure text-center pb-8",
   projecttext2:
@@ -83,21 +95,13 @@ const Content = () => {
       <div className={styles.presgrid}>
         <div className={styles.presflex}>
           <div className={styles.colorpres}>
+            <div className={styles.imagepres}>
+              <Image src={code} alt="logo" height="805" width="2000" />
+            </div>
             <div className={styles.preshr}>
-              <h1 className={styles.prestitle}>A Propos!</h1>
-              <p className={styles.prestext}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                illo aspernatur nam qui commodi vero error voluptate optio amet
-                minus iure esse molestias mollitia perferendis explicabo aut,
-                reiciendis nulla ipsam?
-              </p>
+              <p className={styles.prestext}>Benigno Killian</p>
 
-              <p className={styles.prestext}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                illo aspernatur nam qui commodi vero error voluptate optio amet
-                minus iure esse molestias mollitia perferendis explicabo aut,
-                reiciendis nulla ipsam?
-              </p>
+              <p className={styles.prestext}>Développeur Web</p>
             </div>
           </div>
         </div>
@@ -105,23 +109,27 @@ const Content = () => {
 
       <div className={styles.aproposgrid}>
         <div className={styles.aproposflex}>
-          <div className={styles.colorapropos}>
-            <div className={styles.aproposhr}>
-              <h1 className={styles.title}>A Propos!</h1>
-              <p className={styles.apropostext}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                illo aspernatur nam qui commodi vero error voluptate optio amet
-                minus iure esse molestias mollitia perferendis explicabo aut,
-                reiciendis nulla ipsam?
-              </p>
+          <div className={styles.aproposborder}>
+            <h1 className={styles.title}>A Propos!</h1>
+          </div>
+        </div>
 
-              <p className={styles.apropostext}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                illo aspernatur nam qui commodi vero error voluptate optio amet
-                minus iure esse molestias mollitia perferendis explicabo aut,
-                reiciendis nulla ipsam?
-              </p>
-            </div>
+        <div className={styles.aproposflex}>
+          <div className={styles.colorapropos}>
+            <h1 className={styles.title}>A Propos!</h1>
+            <p className={styles.apropostext}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              illo aspernatur nam qui commodi vero error voluptate optio amet
+              minus iure esse molestias mollitia perferendis explicabo aut,
+              reiciendis nulla ipsam?
+            </p>
+
+            <p className={styles.apropostext}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              illo aspernatur nam qui commodi vero error voluptate optio amet
+              minus iure esse molestias mollitia perferendis explicabo aut,
+              reiciendis nulla ipsam?
+            </p>
           </div>
         </div>
       </div>
