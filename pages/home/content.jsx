@@ -2,33 +2,57 @@ import Image from "next/image";
 import logo from "@src/assets/img/mazebank.png";
 import metacode from "@src/assets/img/metacode.png";
 import code from "@src/assets/img/code.jpg";
+// import htmlcss from "@src/assets/img/htmlcss.jpg";
+import js from "@src/assets/img/js.jpg";
+import jss from "@src/assets/img/jss.png";
+import csss from "@src/assets/img/csss.png";
+import htmlcss2 from "@src/assets/img/htmlcss2.png";
+import w from "@src/assets/img/w.jpg";
+import unknown from "@src/assets/img/unknown.png";
+import unknown2 from "@src/assets/img/unknown2.png";
+import jsk from "@src/assets/img/jsk.svg";
 
 let styles = {
+  //Border
+  bordera: "border-b-2 border-[#70542c]",
+  borderb: "border-b-2 border-[#70542c]",
+  aproposborder: "bg-gradient-to-r from-indigo-500 w-8 h-1 pl-96",
+  aproposborder2: "bg-gradient-to-r from-indigo-500 w-8 h-1",
+  aproposborder3: "bg-gradient-to-r from-indigo-500 w-8 h-1 pl-96",
+
+  //Padding/Magin
+  pl: "pl-96 pt-2",
+  pl2: "pt-28",
+  // pl3: "pt-8",
+
   //Titre
   prestitle:
     "uppercase text-yellow-500 text-center lg:text-red-500 lg:items-center",
-  prestext: "text-white text-center pb-8 lg:text-5xl lg:font-semibold",
-  prestext2: "text-white text-center lg:font-semibold",
+  prestext:
+    "text-white text-center pb-8 lg:text-5xl lg:font-semibold lg:pt-16 z-10",
+  prestext2: "text-white text-center lg:font-semibold z-10",
   presgrid: "grid grid-cols-1",
-  presflex: "flex h-96 flex-row justify-center lg:h-full",
+  presflex: "flex h-96 flex-row justify-center lg:h-full lg:items-center",
   preshr:
     "border-dashed border-2 border-black lg:border-dashed lg:border-2 lg:border-white",
   colorpres:
-    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1 lg:bg-beige lg:h-full",
+    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1",
   imagepres:
-    "bg-customBlack-blacklightdark shadow-lg shadow-black-500/50 lg:bg-customBlack-blacklightdark lg:shadow-lg lg:shadow-black-500/50 lg:blur-sm lg:bg-fixed",
+    "z-0 bg-customBlack-blacklightdark shadow-lg shadow-black-500/50 lg:bg-customBlack-blacklightdark lg:shadow-lg lg:shadow-black-500/50",
 
   // A propos
-  title: "uppercase text-yellow-500 text-center lg:text-4xl lg:text-blue-500",
-  apropostext: "text-white text-center pb-8 lg:text-blue-500",
-  apropostext2: "text-white text-center lg:text-blue-500",
+  title:
+    "uppercase text-yellow-500 text-center lg:text-4xl lg:text-[#00BFFF] font-semibold",
+  apropostext:
+    "text-white text-center pb-8 lg:text-[#6495ED] lg:text-xl lg:italic",
+  apropostext2: "text-white text-center lg:text-customGold-goldpure",
   aproposgrid: "grid grid-cols-2",
-  aproposflex: "flex flex-row justify-center lg:items-center  lg:h-96",
+  aproposflex:
+    "flex flex-row justify-center lg:flex lg:flex-row lg:justify-center lg:items-center lg:h-full bg-customBlack-blackdark",
   aproposhr:
     "border-dashed border-2 border-black lg:border-dashed lg:border-2 lg:border-white",
-  colorapropos:
-    "w-screen h-70 bg-customGold-goldpure outline outline-offset-2 outline-1 lg:bg-beige lg:h-full",
-  aproposborder: "lg:border-b-4 lg:border-indigo-500 lg:h-",
+  colorapropos: "w-screen h-70 bg-customBlack-blackdark",
+  aproposborderfin: "border-b-2 border-[#21b3d2]",
 
   // Skills
   titleskills: "uppercase text-yellow-500 text-center",
@@ -37,8 +61,10 @@ let styles = {
   skillsgrid: "grid grid-cols-1",
   skillsflex: "flex flex-row justify-center",
   skillshr: "border-dashed border-2 border-yellow-600",
-  colorskills: "w-screen h-52 bg-customBlack-blackdark",
+  colorskills: "w-screen h-52 bg-customBlack-blackdark lg:h-96",
   skillscolor: "inline-block bg-slate-500 m-2 text-white p-1 list-none text-lg",
+  skilljs: "bg-customBlack-blacklightdark  lg:bg-customBlack-blacklightdark",
+  skillmargin: "lg:p-8",
 
   // EXPERIENCE
   titleexperience:
@@ -66,9 +92,9 @@ let styles = {
   projecttext: " text-customBlack-blackpure text-center pb-8",
   projecttext2:
     "text-customBlack-whitepure text-center text-base font-semibold p-6",
-  projectgrid: "grid grid-rows-1",
-  projectgridcols3: "grid grid-rows-3",
-  projectflex: "flex flex-col",
+  projectgrid: "grid grid-rows-1 lg:grid lg:grid-rows-1",
+  projectgridcols3: "grid grid-rows-3 lg:grid lg:grid-rows-1",
+  projectflex: "flex flex-col lg:flex lg:flex-row",
   projecthr: "border-dashed border-2 border-yellow-600",
   colorproject: "w-screen h-1/3 bg-customBlack-blackdark",
   projectcolor:
@@ -97,11 +123,11 @@ const Content = () => {
           <div className={styles.colorpres}>
             <div className={styles.imagepres}>
               <Image src={code} alt="logo" height="805" width="2000" />
-            </div>
-            <div className={styles.preshr}>
-              <p className={styles.prestext}>Benigno Killian</p>
-
-              <p className={styles.prestext}>Développeur Web</p>
+              <div>
+                <p className={styles.prestext}>Benigno Killian</p>
+                <p className={styles.prestext}>Développeur Web</p>
+                <div className={styles.aproposborderfin}></div>
+              </div>
             </div>
           </div>
         </div>
@@ -109,14 +135,18 @@ const Content = () => {
 
       <div className={styles.aproposgrid}>
         <div className={styles.aproposflex}>
-          <div className={styles.aproposborder}>
-            <h1 className={styles.title}>A Propos!</h1>
+          <div className={styles.colorapropos}>
+            <div className={styles.pl}>
+              <h1 className={styles.title}>A Propos!</h1>
+              <div className={styles.aproposborder}></div>
+            </div>
           </div>
         </div>
 
         <div className={styles.aproposflex}>
           <div className={styles.colorapropos}>
-            <h1 className={styles.title}>A Propos!</h1>
+            {/* <h1 className={styles.title}>A Propos!</h1> */}
+
             <p className={styles.apropostext}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
               illo aspernatur nam qui commodi vero error voluptate optio amet
@@ -133,23 +163,33 @@ const Content = () => {
           </div>
         </div>
       </div>
+      <div className={styles.aproposborderfin}></div>
 
       <div className={styles.skillssgrid}>
         <div className={styles.skillsflex}>
           <div className={styles.colorskills}>
-            <h1 className={styles.title}>Skills</h1>
-            <div className={styles.skillsflex}>
-              <ul>
-                <li className={styles.skillscolor}>
-                  <a href="#">Html</a>
-                </li>
-                <li className={styles.skillscolor}>
-                  <a href="#">Css</a>
-                </li>
-                <li className={styles.skillscolor}>
-                  <a href="#">Javascript</a>
-                </li>
-              </ul>
+            <div className={styles.pl3}>
+              <h1 className={styles.title}>Skills</h1>
+
+              <div className={styles.skillsflex}>
+                <div className={styles.skilljs}>
+                  <ul>
+                    <li className={styles.skillscolor}>
+                      <a href="#">Html</a>
+                    </li>
+                    <Image src={unknown} alt="logo" height="120" width="120" />
+                    <div className={styles.skillmargin}></div>
+                    <li className={styles.skillscolor}>
+                      <a href="#">Css</a>
+                    </li>
+                    <Image src={unknown2} alt="logo" height="120" width="120" />
+                    <li className={styles.skillscolor}>
+                      <a href="#">Javascript</a>
+                    </li>
+                    <Image src={jsk} alt="logo" height="120" width="120" />
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -157,7 +197,12 @@ const Content = () => {
 
       <div className={styles.experienceflex}>
         <div className={styles.colorexperience}>
-          <h1 className={styles.title}>experience</h1>
+          <div className={styles.pl2}>
+            <h1 className={styles.title}>experience</h1>
+            <div className={styles.pl}>
+              <div className={styles.aproposborder}></div>
+            </div>
+          </div>
           <div className={styles.experiencecolor}></div>
           <h3 className={styles.titleannee}>2022 - 2023</h3>
           <div className={styles.experiencegridcols3}>
@@ -207,6 +252,10 @@ const Content = () => {
       <div className={styles.projectflex}>
         <div className={styles.colorproject}>
           <h1 className={styles.title}>project</h1>
+          <div className={styles.pl}>
+            <div className={styles.aproposborder}></div>
+          </div>
+
           <div className={styles.projectcolor}></div>
           <div className={styles.projectgridcols3}>
             <div className={styles.projectblockflex}>
