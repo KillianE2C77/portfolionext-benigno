@@ -247,6 +247,7 @@ const Content = () => {
                         <h2 class="font-medium title-font text-[#C27385] mb-1 text-xl">
                           BAC Systèmes numériques (2021-2022)
                         </h2>
+                        {/* text */}
                         <p class="leading-relaxed lg:text-blue-300">eazeaea</p>
                       </div>
                     </div>
