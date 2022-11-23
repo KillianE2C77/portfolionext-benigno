@@ -9,8 +9,10 @@ import html from "@src/assets/img/html.png";
 // import w from "@src/assets/Image/w.jpg";
 // import html from "@src/assets/Image/html.png";
 import css from "@src/assets/img/css.png";
-import wordpress from "@src/assets/img/wordpress.jpg";
+import mazebank from "@src/assets/img/mazebank.png";
+import code from "@src/assets/img/code.jpg";
 
+import wordpress from "@src/assets/img/wordpress.jpg";
 let styles = {
   //Border
   bordera: "border-b-2 border-[#70542c]",
@@ -105,8 +107,7 @@ let styles = {
     "w-screen h-1/3 bg-gradient-to-b from-blue-800 via-black-50 bg-gray-800",
   projectcolor:
     "flex justify-center inline-block border-b-2 border-indigo-500 m-2 text-white p-1 list-none text-lg",
-  projectblock1:
-    "w-96 h-50 bg-customRed-redpure shadow-lg shadow-red-500/50  outline outline-offset-2 outline-1",
+  projectblock1: "w-96 h-50 bg-customRed-redpure shadow-lg shadow-red-500/50 ",
   projectblock2:
     "w-96 h-50 bg-green-800 shadow-lg shadow-green-500/50 outline outline-offset-2 outline-1 m-12",
   projectblock3:
@@ -124,23 +125,78 @@ let styles = {
 const Content = () => {
   return (
     <>
-      <div className={styles.presgrid}>
+      {/* <div className={styles.presgrid}>
         <div className={styles.shadow}>
           <div className={styles.presflex}>
             <div className={styles.colorpres}>
-              {/* <div className={styles.imagepres}>
-              <Image src={code} alt="logo" height="805" width="2000" /> */}
               <div>
                 <p className={styles.prestext}>Benigno Killian</p>
                 <p className={styles.prestext}>Développeur Web</p>
               </div>
             </div>
           </div>
-          {/* </div> */}
         </div>
-      </div>
+      </div> */}
+
+      <section class="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-300">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1
+              class="title-font sm:text-4xl lg:text-7xl mb-4 font-medium text-blue-200 recursive"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              {" "}
+              Benigno Killian
+              <br class="hidden lg:inline-block  text-blue-300" />
+              Développeur web
+            </h1>
+          </div>
+        </div>
+      </section>
 
       <section class="text-gray-600 body-font bg-gradient-to-t from-blue-800 via-black-50 bg-gray-800">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <Image
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                  src={code}
+                  width="1200"
+                  height="1200"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"></div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4 text-blue-300">
+                  A la sortie du cursus scolaire, j'ai décidé de poursuivre mes
+                  études afin de devenir un développeur web dans le domaine du
+                  Front-End. Pour ce faire, j'ai un stage à réaliser pour la
+                  péruide du 09 janvier au 03 mars 2023.
+                </p>
+                <a class="text-indigo-500 inline-flex items-center"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section class="text-gray-600 body-font bg-gradient-to-t from-blue-800 via-black-50 bg-gray-800">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <h2 class="sm:text-3xl text-2xl lg:text-blue-300 font-medium title-font mb-2 md:w-2/5 ">
             A propos
@@ -154,11 +210,21 @@ const Content = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section class="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-800">
         <h1 className={styles.title}>compétences</h1>
-        <div class="container px-5 py-24 mx-auto">
+        <div
+          class="container px-5 py-24 mx-auto"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <div class="flex flex-wrap -m-4">
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
@@ -217,10 +283,22 @@ const Content = () => {
       <div className={styles.experienceflex}>
         <div className={styles.colorexperience}>
           <div className={styles.pl2}>
-            <h1 className={styles.title}>experience</h1>
+            <h1 className={styles.title} data-aos="fade-up">
+              experience
+            </h1>
             <div className={styles.pl}>
               <div className={styles.aproposborder}></div>
-              <section class="text-gray-600 body-font">
+              <section
+                class="text-gray-600 body-font"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+              >
                 <div class="container px-5 py-24 mx-auto flex flex-wrap">
                   <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
                     <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
@@ -342,12 +420,9 @@ const Content = () => {
                       </div>
                       <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 class="font-medium title-font text-[#C27385] mb-1 text-xl">
-                          Neptune
+                          ?
                         </h2>
-                        <p class="leading-relaxed text-blue-300">
-                          VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                          Kinfolk bespoke try-hard cliche palo santo offal.
-                        </p>
+                        <p class="leading-relaxed text-blue-300">???</p>
                       </div>
                     </div>
                   </div>
@@ -365,123 +440,147 @@ const Content = () => {
             <div className={styles.aproposborder}></div>
           </div>
 
-          <div className={styles.projectcolor}></div>
-          <div className={styles.projectgridcols3}>
-            <div className={styles.projectblockflex}>
-              <div className={styles.hover}>
-                <div className={styles.projectblock1}>
-                  <div className={styles.imagemazebank}>
-                    {/* <Image src={logo} alt="logo" height="175" width="400" /> */}
+          <section
+            class="text-gray-600 body-font"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/3">
+                  <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                    <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+                      MazeBank
+                    </h1>
+                    <div className={styles.projectblock1}>
+                      <div className={styles.imagemazebank}>
+                        <Image
+                          src={mazebank}
+                          alt="logo"
+                          height="175"
+                          width="400"
+                        />
+                      </div>
+                    </div>
+                    <p class="leading-relaxed mb-3">Site banquaire</p>
+                    <a class="text-indigo-500 inline-flex items-center">
+                      Learn More
+                    </a>
+                    <div className={styles.projectpictureflex}>
+                      <ul>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">html</a>
+                        </li>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">css</a>
+                        </li>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">javascript</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                      <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
+                      <span class="text-gray-400 inline-flex items-center leading-none text-sm"></span>
+                    </div>
                   </div>
-
-                  <h2 className={styles.titleproject}>
-                    Maze Bank - Site banquaire
-                  </h2>
-
-                  <div className={styles.projectpictureflex}>
-                    <ul>
-                      <li className={styles.projectpicturecolor}>
-                        <a href="#">html</a>
-                      </li>
-                      <li className={styles.projectpicturecolor}>
-                        <a href="#">css</a>
-                      </li>
-                      <li className={styles.projectpicturecolor}>
-                        <a href="#">javascript</a>
-                      </li>
-                    </ul>
+                </div>
+                <div class="p-4 lg:w-1/3">
+                  <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                    <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+                      Metacode
+                    </h1>
+                    <div className={styles.projectblock1}>
+                      <div className={styles.imagemazebank}>
+                        <Image
+                          src={mazebank}
+                          alt="logo"
+                          height="175"
+                          width="400"
+                        />
+                      </div>
+                    </div>
+                    <p class="leading-relaxed mb-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sed cupiditate, error possimus omnis iure, quia voluptatem
+                      ratione, consequuntur sequi doloremque atque dolorem
+                      impedit explicabo aut quibusdam necessitatibus repellat
+                      maiores iste.
+                    </p>
+                    <a class="text-indigo-500 inline-flex items-center">
+                      Learn More
+                    </a>
+                    <div className={styles.projectpictureflex}>
+                      <ul>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">html</a>
+                        </li>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">css</a>
+                        </li>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">javascript</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                      <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
+                      <span class="text-gray-400 inline-flex items-center leading-none text-sm"></span>
+                    </div>
                   </div>
-
-                  <p className={styles.projecttext2}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eius illo aspernatur nam qui commodi vero error voluptate
-                    optio amet minus iure esse molestias mollitia perferendis
-                    explicabo aut, reiciendis nulla ipsam?
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                    >
-                      Voir
-                    </button>
-                  </p>
                 </div>
-              </div>
-
-              <div className={styles.projectblock2}>
-                <div className={styles.imagemazebank}>
-                  {/* <Image src={metacode} alt="logo" height="175" width="400" /> */}
+                <div class="p-4 lg:w-1/3">
+                  <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                    <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+                      Boutique
+                    </h1>
+                    <div className={styles.projectblock1}>
+                      <div className={styles.imagemazebank}>
+                        <Image
+                          src={mazebank}
+                          alt="logo"
+                          height="175"
+                          width="400"
+                        />
+                      </div>
+                    </div>
+                    <p class="leading-relaxed mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Debitis suscipit vel sit corrupti, quae id, incidunt
+                      impedit possimus eius deleniti cumque maiores eveniet ex
+                      iusto illo nobis provident voluptate esse!
+                    </p>
+                    <a class="text-indigo-500 inline-flex items-center">
+                      Learn More
+                    </a>
+                    <div className={styles.projectpictureflex}>
+                      <ul>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">html</a>
+                        </li>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">css</a>
+                        </li>
+                        <li className={styles.projectpicturecolor}>
+                          <a href="#">javascript</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                      <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
+                      <span class="text-gray-400 inline-flex items-center leading-none text-sm"></span>
+                    </div>
+                  </div>
                 </div>
-
-                <h2 className={styles.titleproject}>
-                  Maze Bank - Site banquaire
-                </h2>
-
-                <div className={styles.projectpictureflex}>
-                  <ul>
-                    <li className={styles.projectpicturecolor}>
-                      <a href="#">html</a>
-                    </li>
-                    <li className={styles.projectpicturecolor}>
-                      <a href="#">css</a>
-                    </li>
-                    <li className={styles.projectpicturecolor}>
-                      <a href="#">javascript</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <p className={styles.projecttext2}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                  illo aspernatur nam qui commodi vero error voluptate optio
-                  amet minus iure esse molestias mollitia perferendis explicabo
-                  aut, reiciendis nulla ipsam?
-                  <button
-                    type="button"
-                    class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                  >
-                    Voir
-                  </button>
-                </p>
-              </div>
-
-              <div className={styles.projectblock1}>
-                <div className={styles.imagemazebank}>
-                  {/* <Image src={logo} alt="logo" height="175" width="400" /> */}
-                </div>
-
-                <h2 className={styles.titleproject}>
-                  Maze Bank - Site banquaire
-                </h2>
-
-                <div className={styles.projectpictureflex}>
-                  <ul>
-                    <li className={styles.projectpicturecolor}>
-                      <a href="#">html</a>
-                    </li>
-                    <li className={styles.projectpicturecolor}>
-                      <a href="#">css</a>
-                    </li>
-                    <li className={styles.projectpicturecolor}>
-                      <a href="#">javascript</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <p className={styles.projecttext2}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                  illo aspernatur nam qui commodi vero error voluptate optio
-                  amet minus iure esse molestias mollitia perferendis explicabo
-                  aut, reiciendis nulla ipsam?
-                  <button
-                    type="button"
-                    class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                  >
-                    Voir
-                  </button>
-                </p>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </>

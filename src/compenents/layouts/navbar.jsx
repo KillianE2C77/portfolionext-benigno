@@ -14,12 +14,23 @@ let styles = {
 const Navbar = () => {
   return (
     // Navbar
+
     <div className={styles.navbargrid}>
       <div className={styles.bgblacksmooth}>
         <div className={styles.navbarflex}>
           <div className={styles.border}>
             <div className={styles.navbartext}>
-              <ul className={styles.navbarflex}>
+              <ul
+                className={styles.navbarflex}
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+              >
                 <li className="mr-16 hover:border-y-4 hover:animate-bounce border-white ">
                   <a href="#">A propos</a>
                 </li>

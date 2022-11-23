@@ -25,6 +25,7 @@ module.exports = {
     },
     fontFamily: {
       monserrat: ["Montserrat", "sans-serif"],
+      fontfamily: ["Recursive", "sans-serif"],
     },
   },
   plugins: [],
