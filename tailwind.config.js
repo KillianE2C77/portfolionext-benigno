@@ -3,6 +3,11 @@ module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        'monserrat': ["Montserrat"],
+        'fontfamily': ["Recursive"],
+        'Orbitron': ["Orbitron"],
+      },
       colors: {
         customBlack: {
           blacklight: "#272727",
@@ -22,10 +27,6 @@ module.exports = {
           redpure: "#DE272E",
         },
       },
-    },
-    fontFamily: {
-      monserrat: ["Montserrat", "sans-serif"],
-      fontfamily: ["Recursive", "sans-serif"],
     },
   },
   plugins: [],
