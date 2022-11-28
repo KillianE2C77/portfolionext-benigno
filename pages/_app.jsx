@@ -2,8 +2,7 @@ import "tailwindcss/tailwind.css";
 import { useEffect } from "react";
 import AOS from "aos";
 
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css"; 
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
