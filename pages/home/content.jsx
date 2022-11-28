@@ -188,7 +188,7 @@ const Content = () => {
           </div>
         </div>
       </section>
-
+{/* Compétences */}
       <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-800">
         <h1 className={styles.title}>compétences</h1>
         <div
