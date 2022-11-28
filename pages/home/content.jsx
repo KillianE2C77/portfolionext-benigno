@@ -128,9 +128,9 @@ let styles = {
 const Content = () => {
   return (
     <>
-      <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-300">
+      <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-300 h-screen">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1
               className="title-font sm:text-4xl lg:text-7xl mb-4 font-medium text-blue-200 recursive font-Orbitron"
               data-aos="fade-up"
@@ -147,14 +147,14 @@ const Content = () => {
               <br className="hidden lg:inline-block text-blue-300 body-font font-Orbitron" />
               Développeur web Front End
             </h1>
+            <div className="bg-gradient-to-r from-indigo-800 w-4/5 h-1"></div>
 
-            <div className="pt-16">
-              <h2 className="pl-96 title-font tracking-wider  text-[#C27385] font-semibold text-1xl font-Orbitron">
-                Voir plus
-              </h2>
-
+            <h2 className="title-font tracking-wider text-orange-300 font-semibold text-2xl font-Orbitron pt-8">
+              Voir plus
+            </h2>
+            <div className="flex justify-center items-center mt-4">
               <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange-400 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange-400 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 text-white">
                   Mon CV
                 </span>
               </button>

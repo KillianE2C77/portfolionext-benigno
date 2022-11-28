@@ -1,7 +1,6 @@
 import "tailwindcss/tailwind.css";
 import { useEffect } from "react";
 import AOS from "aos";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..

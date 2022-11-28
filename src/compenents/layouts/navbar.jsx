@@ -10,25 +10,9 @@ let styles = {
   navbartext: "uppercase text-white lg:text-2xl lg:font-semibold ",
 };
 
-const SmoothScroll = () => (
-  <div>
-    <AnchorLink href="#things">Things</AnchorLink>
-    <AnchorLink href="#stuff">Stuff</AnchorLink>
-
-    <section id="things">
-      <h2>Things</h2>
-    </section>
-    <section id="stuff">
-      <h2>Stuff</h2>
-    </section>
-  </div>
-);
-
 const Navbar = () => {
   return (
     // Navbar
-      <div>
-    <AnchorLink href="#things">Things</AnchorLink>
 
     <div className={styles.navbargrid}>
       <div className={styles.bgblacksmooth}>
