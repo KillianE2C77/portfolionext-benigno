@@ -168,15 +168,15 @@ const Content = () => {
           <div className="flex justify-center items-center-m-4 relative backdrop-filter backdrop-blur-lg bg-black/50">
             <div className="lg:w-1/3 lg:mb-0 p-4 ">
               <div className="h-full text-center">
-                <img
+                <Image
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                   src="https://dummyimage.com/305x305"
                 />
                 <p className="leading-relaxed text-blue-300 text-2xl font-semibold font-Orbitron">
-                  A la sortie du cursus scolaire, j'ai décidé de poursuivre mes
+                  A la sortie du cursus scolaire, j`ai décidé de poursuivre mes
                   études afin de devenir un développeur web dans le domaine du
-                  Front-End. Pour ce faire, j'ai un stage à réaliser pour la
+                  Front-End. Pour ce faire, j`ai un stage à réaliser pour la
                   péruide du 09 janvier au 03 mars 2023.
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
@@ -381,25 +381,25 @@ const Content = () => {
                           mobile (2022-2023)
                         </h2>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          Intégration d'une maquette + landing page
+                          Intégration d`une maquette + landing page
                         </p>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          Création d'un portfolio
+                          Création d`un portfolio
                         </p>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          Création d'une agence web
+                          Création d`une agence web
                         </p>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          Création d'un site bancaire
+                          Création d`un site bancaire
                         </p>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          Création d'une boutique
+                          Création d`une boutique
                         </p>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          Création d'un blog
+                          Création d`un blog
                         </p>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          Création d'un site de films
+                          Création d`un site de films
                         </p>
                       </div>
                     </div>
@@ -516,7 +516,7 @@ const Content = () => {
                       </div>
                     </div>
                     <p className="leading-relaxed mb-3 text-center text-white font-Orbitron">
-                      Site d'agence
+                      Site d`agence
                     </p>
                     <div className={styles.projectpictureflex}>
                       <ul>
