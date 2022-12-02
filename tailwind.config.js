@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'monserrat': ["Montserrat"],
-        'fontfamily': ["Recursive"],
-        'Orbitron': ["Orbitron"],
+        monserrat: ["Montserrat"],
+        fontfamily: ["Recursive"],
+        Orbitron: ["Orbitron"],
       },
       colors: {
         customBlack: {
@@ -19,9 +19,6 @@ module.exports = {
         customGold: {
           golddark: "#FFD700",
           goldpure: "#70542c",
-        },
-        customGrey: {
-          graypure: "#6c757d",
         },
         customRed: {
           redpure: "#DE272E",

@@ -10,7 +10,8 @@ import html from "@src/assets/img/html.png";
 // import html from "@src/assets/Image/html.png";
 import css from "@src/assets/img/css.png";
 import mazebank from "@src/assets/img/mazebank.png";
-import code from "@src/assets/img/code.jpg";
+// import code from "@src/assets/img/code.jpg";
+import photokillian from "@src/assets/img/photokillian.jpg";
 
 import wordpress from "@src/assets/img/wordpress.jpg";
 let styles = {
@@ -130,7 +131,7 @@ const Content = () => {
     <>
       <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-300 h-screen">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 justify-center items-center text-center">
             <h1
               className="title-font sm:text-4xl lg:text-7xl mb-4 font-medium text-blue-200 recursive font-Orbitron"
               data-aos="fade-up"
@@ -148,13 +149,14 @@ const Content = () => {
               Développeur web Front End
             </h1>
             <div className="bg-gradient-to-r from-indigo-800 w-4/5 h-1"></div>
-
-            <h2 className="title-font tracking-wider text-orange-300 font-semibold text-2xl font-Orbitron pt-8">
-              Voir plus
-            </h2>
+            <div className="flex justify-center items-center">
+              <h2 className="title-font tracking-wider text-orange-300 font-semibold text-2xl font-Orbitron pt-8">
+                Voir plus
+              </h2>
+            </div>
             <div className="flex justify-center items-center mt-4">
               <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange-400 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 text-white">
+                <span class="font-Orbitron relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange-400 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 text-white">
                   Mon CV
                 </span>
               </button>
@@ -171,7 +173,7 @@ const Content = () => {
                 <Image
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                  src="https://dummyimage.com/305x305"
+                  src={photokillian}
                 />
                 <p className="leading-relaxed text-blue-300 text-2xl font-semibold font-Orbitron">
                   A la sortie du cursus scolaire, j`ai décidé de poursuivre mes
@@ -180,7 +182,7 @@ const Content = () => {
                   péruide du 09 janvier au 03 mars 2023.
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                <h2 className=" title-font tracking-wider  text-[#C27385] font-semibold text-1xl font-Orbitron">
+                <h2 className="title-font tracking-wider  text-[#C27385] font-semibold text-1xl font-Orbitron">
                   BENIGNO KILLIAN
                 </h2>
               </div>
@@ -188,7 +190,7 @@ const Content = () => {
           </div>
         </div>
       </section>
-{/* Compétences */}
+      {/* Compétences */}
       <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-800">
         <h1 className={styles.title}>compétences</h1>
         <div
