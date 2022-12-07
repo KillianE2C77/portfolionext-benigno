@@ -4,11 +4,13 @@ let styles = {
   bordergold: "border border-yellow-500",
   bgwhite: "bg-white",
   navbarflex:
-    "flex flex-rows justify-center lg:flex lg:flex-rows lg:justify-center lg:items-center lg:h-full",
+    "flex flex-rows justify-center items-center lg:flex lg:flex-rows lg:justify-center lg:items-center lg:h-full pb-2",
   navbargrid: "grid grid-rows grid-rows-1 lg:grid lg:grid-rows-1",
   navbarpadding: "m-4",
   navbartext: "uppercase text-white lg:text-2xl lg:font-semibold ",
 };
+
+import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Navbar = () => {
   return (
@@ -29,17 +31,19 @@ const Navbar = () => {
               data-aos-once="false"
               data-aos-anchor-placement="top-center"
             >
+              {" "}
               <li className="mr-16 mt-4 px-10 py-5  uppercase font-semibold tracking-wider leading-none hover:text-blue-600 font-Orbitron ">
-                <a href="#">A propos</a>
+                <AnchorLink href="#apropos">A propos</AnchorLink>
+                {/* <a href="#">A propos</a> */}
               </li>
               <li className="mr-16 mt-4 px-10 py-5  uppercase font-semibold tracking-wider leading-none hover:text-blue-600 font-Orbitron">
-                <a href="#">Experience</a>
+                <AnchorLink href="#competences">Competences</AnchorLink>
               </li>
               <li className="mr-16 mt-4 px-10 py-5  uppercase font-semibold tracking-wider leading-none hover:text-blue-600 font-Orbitron">
-                <a href="#">Projet</a>
+                <AnchorLink href="#experience">Experience</AnchorLink>
               </li>
               <li className="mr-16 mt-4 px-10 py-5  uppercase font-semibold tracking-wider leading-none hover:text-blue-600 font-Orbitron">
-                <a href="#">Contacte</a>
+                <AnchorLink href="#project">Project</AnchorLink>
               </li>
             </ul>
           </div>

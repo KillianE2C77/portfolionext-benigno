@@ -12,8 +12,12 @@ import css from "@src/assets/img/css.png";
 import mazebank from "@src/assets/img/mazebank.png";
 // import code from "@src/assets/img/code.jpg";
 import photokillian from "@src/assets/img/photokillian.jpg";
-
+// import github from "@src/assets/img/github.png";
 import wordpress from "@src/assets/img/wordpress.jpg";
+import wordpress2 from "@src/assets/img/wordpress.jpg";
+import metacode from "@src/assets/img/metacode.png";
+import boutique from "@src/assets/img/boutique.webp";
+
 let styles = {
   //Border
   bordera: "border-b-2 border-[#70542c]",
@@ -108,7 +112,7 @@ let styles = {
     "w-screen h-1/3 bg-gradient-to-b from-blue-800 via-black-50 bg-gray-800 p-52",
   projectcolor:
     "flex justify-center inline-block border-b-2 border-indigo-500 m-2 text-white p-1 list-none text-lg",
-  projectblock1: "w-96 h-50 bg-customRed-redpure shadow-lg shadow-red-500/50 ",
+  projectblock1: "w-96 h-50 bg-blue-500 shadow-lg shadow-red-500/50 ",
   projectblock2:
     "w-96 h-50 bg-green-800 shadow-lg shadow-green-500/50 outline outline-offset-2 outline-1 m-12",
   projectblock3:
@@ -121,7 +125,8 @@ let styles = {
   projectpicturecolor2:
     "inline-block bg-blue-500 m-2 text-white p-1 list-none text-lg rounded leading-none font-black p-1.5 font-Orbitron",
   imagemazebank: "bg-customBlack-blacklightdark shadow-lg shadow-black-500/50",
-  imagemazemetacode: "bg-green-800 shadow-lg shadow-green-500/50",
+  imagemetacode: "bg-green-800 shadow-lg shadow-green-400/50",
+  imageboutique: "bg-pink-700 shadow-lg shadow-pink-500/50",
   hover:
     "hover:opacity-1 hover:bg-black hover:ease-in active:bg-white focus:outline-none",
 };
@@ -129,7 +134,7 @@ let styles = {
 const Content = () => {
   return (
     <>
-      <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-300 h-screen">
+      <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-300 h-screen ">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 justify-center items-center text-center">
             <h1
@@ -148,18 +153,22 @@ const Content = () => {
               <br className="hidden lg:inline-block text-blue-300 body-font font-Orbitron" />
               Développeur web Front End
             </h1>
+
             <div className="bg-gradient-to-r from-indigo-800 w-4/5 h-1"></div>
             <div className="flex justify-center items-center">
               <h2 className="title-font tracking-wider text-orange-300 font-semibold text-2xl font-Orbitron pt-8">
                 Voir plus
               </h2>
             </div>
+
             <div className="flex justify-center items-center mt-4">
-              <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                <span class="font-Orbitron relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange-400 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 text-white">
-                  Mon CV
-                </span>
-              </button>
+              <a href="https://www.linkedin.com/">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                  <span class="font-Orbitron relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange-400 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 text-white">
+                    Mon CV
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -170,11 +179,13 @@ const Content = () => {
           <div className="flex justify-center items-center-m-4 relative backdrop-filter backdrop-blur-lg bg-black/50">
             <div className="lg:w-1/3 lg:mb-0 p-4 ">
               <div className="h-full text-center">
+                <section id="apropos"></section>
                 <Image
                   alt="testimonial"
-                  className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                  className="w-10 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                   src={photokillian}
                 />
+
                 <p className="leading-relaxed text-blue-300 text-2xl font-semibold font-Orbitron">
                   A la sortie du cursus scolaire, j`ai décidé de poursuivre mes
                   études afin de devenir un développeur web dans le domaine du
@@ -192,7 +203,12 @@ const Content = () => {
       </section>
       {/* Compétences */}
       <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-800">
+        <section id="things">
+          <h2>Stuff</h2>
+        </section>
+
         <h1 className={styles.title}>compétences</h1>
+        <section id="competences"></section>
         <div
           className="container px-5 py-24 mx-auto"
           data-aos="fade-up"
@@ -204,8 +220,9 @@ const Content = () => {
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
         >
-          <div className="flex flex-wrap m-4 backdrop-filter backdrop-blur-lg bg-white/20">
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+          <div className="flex flex-wrap m-4 backdrop-filter backdrop-blur-lg bg-white/20 ">
+            <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-70"></div>
+            <div className="p-4 lg:w-1/4 md:w-1/2 ">
               <div className="h-full flex flex-col items-center text-center">
                 <Image
                   alt="team"
@@ -214,14 +231,15 @@ const Content = () => {
                   width="120"
                   height="150"
                 />
+
                 <span className="inline-flex"></span>
               </div>
             </div>
             <div className="p-4 lg:w-1/4 md:w-1/2">
-              <div className="h-full flex flex-col items-center text-center">
+              <div className="h-full flex flex-col items-center text-center ">
                 <Image
                   alt="team"
-                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
                   src={css}
                   width="120"
                   height="150"
@@ -247,13 +265,14 @@ const Content = () => {
             </div>
             <div className="p-4 lg:w-1/4 md:w-1/2">
               <div className="h-full flex flex-col items-center text-center">
-                <Image
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                   src={wordpress}
                   width="120"
                   height="150"
-                />
+                /> */}
+                <i class="fa-brands fa-wordpress"></i>
                 <div className="w-full">
                   <span className="inline-flex"></span>
                 </div>
@@ -269,6 +288,7 @@ const Content = () => {
             <h1 className={styles.title} data-aos="fade-up">
               experience
             </h1>
+            <section id="experience"></section>
             <div className={styles.pl}>
               <div className={styles.aproposborder}></div>
               <section
@@ -451,7 +471,7 @@ const Content = () => {
           <div className={styles.pl}>
             <div className={styles.aproposborder}></div>
           </div>
-
+          <section id="project"></section>
           <section
             className="text-gray-600 body-font"
             data-aos="fade-up"
@@ -467,6 +487,7 @@ const Content = () => {
               <div className="flex flex-wrap -m-4">
                 <div className="p-4 lg:w-1/3">
                   <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative backdrop-filter backdrop-blur-lg bg-black/60">
+                    <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-red-500 via-red-400 to-red-600 hover:opacity-70"></div>
                     <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron">
                       MazeBank
                     </h1>
@@ -480,6 +501,7 @@ const Content = () => {
                         />
                       </div>
                     </div>
+                    4
                     <p className="leading-relaxed mb-3 text-center text-white font-Orbitron">
                       Site banquaire
                     </p>
@@ -496,6 +518,25 @@ const Content = () => {
                         </li>
                       </ul>
                     </div>
+                    <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
+                      <a href="https://www.linkedin.com/in/killian-benigno/">
+                        <svg
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="0"
+                          class="w-5 h-5"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                          ></path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                      </a>
+                    </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
                       <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
                       <span className="text-gray-400 inline-flex items-center leading-none text-sm"></span>
@@ -504,13 +545,14 @@ const Content = () => {
                 </div>
                 <div className="p-4 lg:w-1/3 ">
                   <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative backdrop-filter backdrop-blur-lg bg-black/60">
+                    <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-green-500 via-slate-100 to-green-500 hover:opacity-70"></div>
                     <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron">
                       Metacode
                     </h1>
                     <div className={styles.projectblock1}>
-                      <div className={styles.imagemazebank}>
+                      <div className={styles.imagemetacode}>
                         <Image
-                          src={mazebank}
+                          src={metacode}
                           alt="logo"
                           height="175"
                           width="400"
@@ -533,6 +575,25 @@ const Content = () => {
                         </li>
                       </ul>
                     </div>
+                    <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
+                      <a href="https://www.linkedin.com/">
+                        <svg
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="0"
+                          class="w-5 h-5"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                          ></path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                      </a>
+                    </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
                       <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
                       <span className="text-gray-400 inline-flex items-center leading-none text-sm"></span>
@@ -541,19 +602,21 @@ const Content = () => {
                 </div>
                 <div className="p-4 lg:w-1/3">
                   <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative backdrop-filter backdrop-blur-lg bg-black/60">
+                    <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-70"></div>
                     <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron">
                       Boutique
                     </h1>
                     <div className={styles.projectblock1}>
-                      <div className={styles.imagemazebank}>
+                      <div className={styles.imageboutique}>
                         <Image
-                          src={mazebank}
+                          src={boutique}
                           alt="logo"
                           height="175"
                           width="400"
                         />
                       </div>
                     </div>
+
                     <p className="leading-relaxed mb-3 text-white font-Orbitron">
                       Boutique wordpress
                     </p>
@@ -570,7 +633,31 @@ const Content = () => {
                         </li>
                       </ul>
                     </div>
+                    <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
+                      <a href="https://www.linkedin.com/">
+                        <svg
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="0"
+                          class="w-5 h-5"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                          ></path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                      </a>
+                    </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                      {/* <Image
+                        alt="testimonial"
+                        className="w-full h-56 object-cover object-center mb-4"
+                        src={github}
+                      /> */}
                       <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
                       <span className="text-gray-400 inline-flex items-center leading-none text-sm"></span>
                     </div>

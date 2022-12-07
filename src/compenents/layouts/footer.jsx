@@ -6,6 +6,8 @@ let styles = {
   footertext: "uppercase text-white text-center",
 };
 
+// import github from "@src/assets/img/github.svg";
+
 const Footer = () => {
   return (
     <footer class="text-gray-600 body-font bg-customBlack-blackdark">
@@ -21,7 +23,7 @@ const Footer = () => {
           ></a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a class="ml-3 text-blue-500">
+          <a href="https://www.linkedin.com/">
             <svg
               fill="currentColor"
               stroke="currentColor"
@@ -39,6 +41,22 @@ const Footer = () => {
             </svg>
           </a>
         </span>
+        {/* <a class=""> */}
+        {/* <Img alt="blog" src="https://dummyimage.com/104x104" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+              <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
+            </span>
+        </a> */}
+        ;
+        {/* <a href="https://github.com/KillianE2C77">
+          <Image
+            src={github}
+            alt="logo"
+            height="175"
+            width="400"
+          />
+        </a> */}
       </div>
     </footer>
   );
