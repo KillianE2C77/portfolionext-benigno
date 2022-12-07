@@ -5,8 +5,7 @@ let styles = {
   footergrid: "grid grid-rows-1",
   footertext: "uppercase text-white text-center",
 };
-
-// import github from "@src/assets/img/github.svg";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Footer = () => {
   return (
@@ -40,23 +39,10 @@ const Footer = () => {
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
+          <a href="https://github.com/MEGK-171/agence-web">
+            <GitHubIcon alt="testimonial" />;
+          </a>
         </span>
-        {/* <a class=""> */}
-        {/* <Img alt="blog" src="https://dummyimage.com/104x104" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-            <span class="flex-grow flex flex-col pl-4">
-              <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-              <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
-            </span>
-        </a> */}
-        ;
-        {/* <a href="https://github.com/KillianE2C77">
-          <Image
-            src={github}
-            alt="logo"
-            height="175"
-            width="400"
-          />
-        </a> */}
       </div>
     </footer>
   );

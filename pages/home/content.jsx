@@ -17,6 +17,8 @@ import wordpress from "@src/assets/img/wordpress.jpg";
 import wordpress2 from "@src/assets/img/wordpress.jpg";
 import metacode from "@src/assets/img/metacode.png";
 import boutique from "@src/assets/img/boutique.webp";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import WebIcon from "@mui/icons-material/Web";
 
 let styles = {
   //Border
@@ -196,6 +198,7 @@ const Content = () => {
                 <h2 className="title-font tracking-wider  text-[#C27385] font-semibold text-1xl font-Orbitron">
                   BENIGNO KILLIAN
                 </h2>
+                <section id="competences"></section>
               </div>
             </div>
           </div>
@@ -203,12 +206,7 @@ const Content = () => {
       </section>
       {/* Compétences */}
       <section className="text-gray-600 body-font bg-gradient-to-b from-blue-800 via-black-50 bg-gray-800">
-        <section id="things">
-          <h2>Stuff</h2>
-        </section>
-
         <h1 className={styles.title}>compétences</h1>
-        <section id="competences"></section>
         <div
           className="container px-5 py-24 mx-auto"
           data-aos="fade-up"
@@ -291,6 +289,7 @@ const Content = () => {
             <section id="experience"></section>
             <div className={styles.pl}>
               <div className={styles.aproposborder}></div>
+
               <section
                 className="text-gray-600 body-font"
                 data-aos="fade-up"
@@ -324,6 +323,7 @@ const Content = () => {
                           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                       </div>
+
                       <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 className="font-medium title-font text-[#C27385] mb-1 text-xl font-Orbitron">
                           BAC Systèmes numériques (2021-2022)
@@ -453,7 +453,7 @@ const Content = () => {
                           ?
                         </h2>
                         <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          ???
+                          ?
                         </p>
                       </div>
                     </div>
@@ -519,22 +519,11 @@ const Content = () => {
                       </ul>
                     </div>
                     <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
-                      <a href="https://www.linkedin.com/in/killian-benigno/">
-                        <svg
-                          fill="currentColor"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="0"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke="none"
-                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                          ></path>
-                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                        </svg>
+                      <a href="https://github.com/KillianE2C77/Mazee-bank/tree/dev">
+                        <GitHubIcon alt="testimonial" />;
+                      </a>
+                      <a href="https://mazebankbng.netlify.app/">
+                        <WebIcon alt="testimonial" />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -576,22 +565,11 @@ const Content = () => {
                       </ul>
                     </div>
                     <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
-                      <a href="https://www.linkedin.com/">
-                        <svg
-                          fill="currentColor"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="0"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke="none"
-                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                          ></path>
-                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                        </svg>
+                      <a href="https://github.com/MEGK-171/agence-web">
+                        <GitHubIcon alt="testimonial" />;
+                      </a>
+                      <a href="https://meta-code.netlify.app/">
+                        <WebIcon alt="testimonial" />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -634,22 +612,11 @@ const Content = () => {
                       </ul>
                     </div>
                     <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
-                      <a href="https://www.linkedin.com/">
-                        <svg
-                          fill="currentColor"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="0"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke="none"
-                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                          ></path>
-                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                        </svg>
+                      <a href="https://metadev-mrp.fr/">
+                        <GitHubIcon alt="testimonial" />;
+                      </a>
+                      <a href="https://metadev-mrp.fr/">
+                        <WebIcon alt="testimonial" />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
