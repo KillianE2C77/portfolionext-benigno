@@ -14,14 +14,8 @@ const Footer = () => {
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"></a>
         <p class="text-sm text-blue-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-blue-500 sm:py-2 sm:mt-0 mt-4">
           © Benigno Killian
-          <a
-            href="https://twitter.com/knyttneve"
-            class="text-gray-600 ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-          ></a>
         </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start text-blue-500">
           <a href="https://www.linkedin.com/">
             <svg
               fill="currentColor"
@@ -39,8 +33,11 @@ const Footer = () => {
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
-          <a href="https://github.com/MEGK-171/agence-web">
-            <GitHubIcon alt="testimonial" />;
+          <a
+            href="https://github.com/MEGK-171/agence-web"
+            className="text-blue-500 pl-4"
+          >
+            <GitHubIcon alt="testimonial" />
           </a>
         </span>
       </div>

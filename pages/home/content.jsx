@@ -101,7 +101,7 @@ let styles = {
   experienceflex: "flex flex-col",
   experiencehr: "border-dashed border-2 border-yellow-600",
   colorexperience:
-    "w-screen h-screen bg-customBlack-blackdark bg-gradient-to-t from-blue-800 via-black-50 bg-gray-800",
+    "w-screen h-screen bg-customBlack-blackdark bg-gradient-to-t from-blue-700 via-black-50 bg-gray-800",
   experiencecolor:
     "flex justify-center inline-block border-b-2 border-blue-800 m-2 text-white p-1 list-none text-lg ",
   experienceblock1:
@@ -199,7 +199,7 @@ const Content = () => {
                   src={photokillian}
                 />
 
-                <p className="leading-relaxed text-blue-300 text-2xl font-semibold font-Orbitron">
+                <p className="leading-relaxed text-blue-300 text-2xl font-semibold font-Orbitron pt-8">
                   A la sortie du cursus scolaire, j`ai décidé de poursuivre mes
                   études afin de devenir un développeur web dans le domaine du
                   Front-End. Pour ce faire, j`ai un stage à réaliser pour la
@@ -579,11 +579,14 @@ const Content = () => {
                       <a href="https://github.com/KillianE2C77/Mazee-bank/tree/dev">
                         <GitHubIcon
                           alt="testimonial"
-                          className="pr-2 w-20 h-10"
+                          className="pr-2 w-20 h-10 text-blue-500"
                         />
                       </a>
                       <a href="https://mazebankbng.netlify.app/">
-                        <WebIcon alt="testimonial" className="pr-4 w-20 h-10" />
+                        <WebIcon
+                          alt="testimonial"
+                          className="pr-4 w-20 h-10 text-blue-500"
+                        />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -628,11 +631,14 @@ const Content = () => {
                       <a href="https://github.com/MEGK-171/agence-web">
                         <GitHubIcon
                           alt="testimonial"
-                          className="pr-2 w-20 h-10"
+                          className="pr-2 w-20 h-10 text-blue-500"
                         />
                       </a>
                       <a href="https://meta-code.netlify.app/">
-                        <WebIcon alt="testimonial" className="pr-4 w-20 h-10" />
+                        <WebIcon
+                          alt="testimonial"
+                          className="pr-4 w-20 h-10 text-blue-500"
+                        />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -678,11 +684,14 @@ const Content = () => {
                       <a href="https://metadev-mrp.fr/">
                         <GitHubIcon
                           alt="testimonial"
-                          className="pr-2 w-20 h-10"
+                          className="pr-2 w-20 h-10 text-blue-500"
                         />
                       </a>
                       <a href="https://metadev-mrp.fr/">
-                        <WebIcon alt="testimonial" className="pr-4 w-20 h-10" />
+                        <WebIcon
+                          alt="testimonial"
+                          className="pr-4 w-20 h-10 text-blue-500"
+                        />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
