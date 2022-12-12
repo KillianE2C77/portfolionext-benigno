@@ -3,7 +3,7 @@ import Image from "next/image";
 // import code from "@src/assets/Image/code.jpg";
 // import htmlcss from "@src/assets/Image/htmlcss.jpg";
 // import js from "@src/assets/Image/js.jpg";
-import jss from "@src/assets/img/jss.png";
+import js from "@src/assets/img/js.webp";
 // import csss from "@src/assets/Image/csss.png";
 import html from "@src/assets/img/html.png";
 // import w from "@src/assets/Image/w.jpg";
@@ -19,6 +19,17 @@ import metacode from "@src/assets/img/metacode.png";
 import boutique from "@src/assets/img/boutique.webp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WebIcon from "@mui/icons-material/Web";
+import node144 from "src/assets/img/node144.webp";
+import php from "src/assets/img/php.webp";
+import mysql from "src/assets/img/mysql.webp";
+import xc from "src/assets/img/xc.webp";
+import react from "src/assets/img/react.webp";
+import p from "src/assets/img/p.webp";
+import l from "src/assets/img/l.webp";
+import r from "src/assets/img/r.webp";
+import b from "src/assets/img/b.webp";
+import imagen from "src/assets/img/imagen.webp";
+import imagen2 from "src/assets/img/imagen2.webp";
 
 let styles = {
   //Border
@@ -123,7 +134,7 @@ let styles = {
 
   projectpictureflex: "flex flex-row justify-center",
   projectpicturecolor:
-    "inline-block bg-blue-500 m-2 text-white p-1 list-none text-lg rounded leading-none font-black p-1.5 font-Orbitron",
+    "inline-block bg-blue-500 m-2 text-white p-1 list-none text-lg rounded leading-none font-black p-1.5 font-Orbitron uppercase",
   projectpicturecolor2:
     "inline-block bg-blue-500 m-2 text-white p-1 list-none text-lg rounded leading-none font-black p-1.5 font-Orbitron",
   imagemazebank: "bg-customBlack-blacklightdark shadow-lg shadow-black-500/50",
@@ -226,8 +237,12 @@ const Content = () => {
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                   src={html}
-                  width="120"
-                  height="150"
+                />
+
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
+                  src={r}
                 />
 
                 <span className="inline-flex"></span>
@@ -239,9 +254,20 @@ const Content = () => {
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
                   src={css}
-                  width="120"
-                  height="150"
                 />
+
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
+                  src={node144}
+                />
+
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
+                  src={imagen}
+                />
+
                 <div className="w-full">
                   <span className="inline-flex"></span>
                 </div>
@@ -252,9 +278,41 @@ const Content = () => {
                 <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                  src={jss}
-                  width="120"
-                  height="150"
+                  src={js}
+                />
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
+                  src={mysql}
+                />
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
+                  src={l}
+                />
+                <div className="w-full">
+                  <span className="inline-flex"></span>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="h-full flex flex-col items-center text-center">
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 pb-8"
+                  src={react}
+                />
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
+                  src={php}
+                />
+
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
+                  src={imagen2}
                 />
                 <div className="w-full">
                   <span className="inline-flex"></span>
@@ -488,7 +546,7 @@ const Content = () => {
                 <div className="p-4 lg:w-1/3">
                   <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative backdrop-filter backdrop-blur-lg bg-black/60">
                     <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-red-500 via-red-400 to-red-600 hover:opacity-70"></div>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron">
+                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron pb-8">
                       MazeBank
                     </h1>
                     <div className={styles.projectblock1}>
@@ -501,8 +559,7 @@ const Content = () => {
                         />
                       </div>
                     </div>
-                    4
-                    <p className="leading-relaxed mb-3 text-center text-white font-Orbitron">
+                    <p className="leading-relaxed mb-3 text-center text-white font-Orbitron pt-8">
                       Site banquaire
                     </p>
                     <div className={styles.projectpictureflex}>
@@ -518,12 +575,15 @@ const Content = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
+                    <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full ">
                       <a href="https://github.com/KillianE2C77/Mazee-bank/tree/dev">
-                        <GitHubIcon alt="testimonial" />;
+                        <GitHubIcon
+                          alt="testimonial"
+                          className="pr-2 w-20 h-10"
+                        />
                       </a>
                       <a href="https://mazebankbng.netlify.app/">
-                        <WebIcon alt="testimonial" />
+                        <WebIcon alt="testimonial" className="pr-4 w-20 h-10" />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -535,7 +595,7 @@ const Content = () => {
                 <div className="p-4 lg:w-1/3 ">
                   <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative backdrop-filter backdrop-blur-lg bg-black/60">
                     <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-green-500 via-slate-100 to-green-500 hover:opacity-70"></div>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron">
+                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron pb-8">
                       Metacode
                     </h1>
                     <div className={styles.projectblock1}>
@@ -548,7 +608,7 @@ const Content = () => {
                         />
                       </div>
                     </div>
-                    <p className="leading-relaxed mb-3 text-center text-white font-Orbitron">
+                    <p className="leading-relaxed mb-3 text-center text-white font-Orbitron pt-8">
                       Site d`agence
                     </p>
                     <div className={styles.projectpictureflex}>
@@ -566,10 +626,13 @@ const Content = () => {
                     </div>
                     <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
                       <a href="https://github.com/MEGK-171/agence-web">
-                        <GitHubIcon alt="testimonial" />;
+                        <GitHubIcon
+                          alt="testimonial"
+                          className="pr-2 w-20 h-10"
+                        />
                       </a>
                       <a href="https://meta-code.netlify.app/">
-                        <WebIcon alt="testimonial" />
+                        <WebIcon alt="testimonial" className="pr-4 w-20 h-10" />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -581,7 +644,7 @@ const Content = () => {
                 <div className="p-4 lg:w-1/3">
                   <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative backdrop-filter backdrop-blur-lg bg-black/60">
                     <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-70"></div>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron">
+                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3 font-Orbitron pb-8">
                       Boutique
                     </h1>
                     <div className={styles.projectblock1}>
@@ -595,7 +658,7 @@ const Content = () => {
                       </div>
                     </div>
 
-                    <p className="leading-relaxed mb-3 text-white font-Orbitron">
+                    <p className="leading-relaxed mb-3 text-white font-Orbitron pt-8">
                       Boutique wordpress
                     </p>
                     <div className={styles.projectpictureflex}>
@@ -613,10 +676,13 @@ const Content = () => {
                     </div>
                     <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full">
                       <a href="https://metadev-mrp.fr/">
-                        <GitHubIcon alt="testimonial" />;
+                        <GitHubIcon
+                          alt="testimonial"
+                          className="pr-2 w-20 h-10"
+                        />
                       </a>
                       <a href="https://metadev-mrp.fr/">
-                        <WebIcon alt="testimonial" />
+                        <WebIcon alt="testimonial" className="pr-4 w-20 h-10" />
                       </a>
                     </div>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">

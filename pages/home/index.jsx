@@ -1,7 +1,7 @@
 import Layout from "../../src/compenents/layouts/layout";
 import Content from "./content";
 
-// import React from "react";
+import React from "react";
 // import ReactDOM from "react-dom";
 
 // const HomePage = () => {
