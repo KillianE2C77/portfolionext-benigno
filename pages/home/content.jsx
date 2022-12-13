@@ -132,11 +132,11 @@ let styles = {
     "w-96 h-50 bg-customRed-redpure shadow-lg shadow-red-500/50  outline outline-offset-2 outline-1",
   projectblockflex: "flex flex-col justify-center items-center",
 
-  projectpictureflex: "flex flex-row justify-center",
+  projectpictureflex: "flex flex-row justify-center pt-6 pb-10",
   projectpicturecolor:
     "inline-block bg-blue-500 m-2 text-white p-1 list-none text-lg rounded leading-none font-black p-1.5 font-Orbitron uppercase",
   projectpicturecolor2:
-    "inline-block bg-blue-500 m-2 text-white p-1 list-none text-lg rounded leading-none font-black p-1.5 font-Orbitron",
+    " inline-block bg-blue-500 m-2 text-white p-1 list-none text-lg rounded leading-none font-black p-1.5 font-Orbitron uppercase",
   imagemazebank: "bg-customBlack-blacklightdark shadow-lg shadow-black-500/50",
   imagemetacode: "bg-green-800 shadow-lg shadow-green-400/50",
   imageboutique: "bg-pink-700 shadow-lg shadow-pink-500/50",
@@ -232,7 +232,7 @@ const Content = () => {
           <div className="flex flex-wrap m-4 backdrop-filter backdrop-blur-lg bg-white/20 ">
             <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-70"></div>
             <div className="p-4 lg:w-1/4 md:w-1/2 ">
-              <div className="h-full flex flex-col items-center text-center">
+              <div className="h-full flex flex-col items-center text-center border-r-4 border-l-4 border-blue-500">
                 <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
@@ -248,8 +248,8 @@ const Content = () => {
                 <span className="inline-flex"></span>
               </div>
             </div>
-            <div className="p-4 lg:w-1/4 md:w-1/2">
-              <div className="h-full flex flex-col items-center text-center ">
+            <div className="p-4 lg:w-1/4 md:w-1/2 ">
+              <div className="h-full flex flex-col items-center text-center border-r-4 border-l-4 border-blue-500">
                 <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 "
@@ -274,7 +274,7 @@ const Content = () => {
               </div>
             </div>
             <div className="p-4 lg:w-1/4 md:w-1/2">
-              <div className="h-full flex flex-col items-center text-center">
+              <div className="h-full flex flex-col items-center text-center border-r-4 border-l-4 border-blue-500">
                 <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
@@ -297,7 +297,7 @@ const Content = () => {
             </div>
 
             <div className="p-4 lg:w-1/4 md:w-1/2">
-              <div className="h-full flex flex-col items-center text-center">
+              <div className="h-full flex flex-col items-center text-center border-r-4 border-l-4 border-blue-500">
                 <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 pb-8"
@@ -484,38 +484,6 @@ const Content = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-                    <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-                      <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                    </div>
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-                      4
-                    </div>
-                    <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                      <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          className="w-12 h-12"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                          <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                      </div>
-                      <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                        <h2 className="font-medium title-font text-[#C27385] mb-1 text-xl">
-                          ?
-                        </h2>
-                        <p className="leading-relaxed text-blue-300 font-Orbitron">
-                          ?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </section>
             </div>
@@ -567,15 +535,17 @@ const Content = () => {
                         <li className={styles.projectpicturecolor}>
                           <a href="#">html</a>
                         </li>
+
                         <li className={styles.projectpicturecolor2}>
                           <a href="#">css</a>
                         </li>
+
                         <li className={styles.projectpicturecolor}>
                           <a href="#">javascript</a>
                         </li>
                       </ul>
                     </div>
-                    <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full ">
+                    <div className="text-center mb-14 leading-none flex justify-center absolute bottom-0 left-0 w-full pt-16">
                       <a href="https://github.com/KillianE2C77/Mazee-bank/tree/dev">
                         <GitHubIcon
                           alt="testimonial"

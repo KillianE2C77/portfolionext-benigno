@@ -33,9 +33,10 @@ const Footer = () => {
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
+          <div className="p-4"></div>
           <a
             href="https://github.com/MEGK-171/agence-web"
-            className="text-blue-500 pl-4"
+            className="text-blue-500"
           >
             <GitHubIcon alt="testimonial" />
           </a>
